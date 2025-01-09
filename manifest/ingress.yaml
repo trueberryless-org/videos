@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: videos
+  namespace: videos
+spec:
+  rules:
+    - host: videos.trueberryless.org
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: videos
+                port:
+                  number: 80
+
+  tls:
+    - hosts:
+        - videos.trueberryless.org
+      secretName: videos
