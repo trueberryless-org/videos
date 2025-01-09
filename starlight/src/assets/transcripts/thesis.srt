@@ -1,0 +1,139 @@
+1
+00:00:01,340 --> 00:00:05,240
+Visualisierung der Ergebnisse des Stromnetzmodells
+
+2
+00:00:05,240 --> 00:00:07,240
+Was bedeutet das denn eigentlich?
+
+3
+00:00:07,240 --> 00:00:10,360
+Fangen wir am besten mit der Ausgangssituation an.
+
+4
+00:00:10,360 --> 00:00:16,010
+Siemens entwickelt ein Programm, welches die
+Fehler im Stromnetzmodell berechnet und aktuell
+
+5
+00:00:16,010 --> 00:00:18,070
+in Log Files speichert.
+
+6
+00:00:18,070 --> 00:00:23,109
+Diese Log Files sind äußerst unübersichtlich
+und es kann lange dauern, bis ein Ingenieur
+
+7
+00:00:23,109 --> 00:00:26,980
+von Siemens den Ursprung des Fehlers gefunden hat.
+
+8
+00:00:26,980 --> 00:00:30,449
+Genau hier wird unsere Applikation relevant.
+
+9
+00:00:30,449 --> 00:00:35,450
+Wir haben ein System entwickelt, welches die
+Fehlerdaten von Siemens über das Apache Kafka
+
+10
+00:00:35,450 --> 00:00:40,930
+System - das ist ein Message Bus - an das
+Backend übergibt und dort persistiert.
+
+11
+00:00:40,930 --> 00:00:47,480
+Das Backend ist mittels Java Spring Framework
+und PostgreSQL Datenbank implementiert.
+
+12
+00:00:47,480 --> 00:00:55,620
+Über eine GraphQL Schnittstelle kann das
+Angular Frontend die Daten visualisieren.
+
+13
+00:00:55,620 --> 00:00:58,899
+Kommen wir nun zu den Besonderheiten unserer Applikation.
+
+14
+00:00:58,899 --> 00:01:05,010
+Aufgrund des Message Busses ist unsere Applikation
+optimal von dem Service von Siemens entkoppelt.
+
+15
+00:01:05,010 --> 00:01:09,110
+Dies ermöglicht eine einfache Integration
+in die Production bei Siemens.
+
+16
+00:01:09,110 --> 00:01:14,100
+Das Frontend bietet ideale Möglichkeiten,
+um die Daten zu analysieren.
+
+17
+00:01:14,100 --> 00:01:18,810
+Wie Sie hier sehen können, verfügt es über
+ein Dashboard, welches die vier Eigenschaften,
+
+18
+00:01:18,810 --> 00:01:22,950
+Klasse, Kategorie, Schweregrad und Spannungslevel, darstellt.
+
+19
+00:01:22,950 --> 00:01:27,810
+Das Herzstück der Applikation ist jedoch
+die Tabelle, welcher jegliche Art von Such-
+
+20
+00:01:27,810 --> 00:01:30,460
+und Filtermöglichkeiten implementiert.
+
+21
+00:01:30,460 --> 00:01:35,140
+Man kann die Daten nicht nur Sortieren, sondern
+eben auch nach gewissen Begriffen, und den
+
+22
+00:01:35,140 --> 00:01:37,500
+vier vorhin genannten Eigenschaften filtern.
+
+23
+00:01:37,500 --> 00:01:42,530
+Ein wichtiger Bestandteil ist auch der Button
+zum Zurücksetzen aller Filter.
+
+24
+00:01:43,860 --> 00:01:46,000
+Kommen wir nun zum Graph.
+
+25
+00:01:46,000 --> 00:01:49,100
+Dieser zeigt einen Teil des Stromnetzwerkes an.
+
+26
+00:01:49,100 --> 00:01:54,790
+Hierbei ist das Objekt mit dem aktuellen Fehler
+in blau dargestellt, sodass die Ingenieure von Siemens
+
+27
+00:01:54,790 --> 00:01:58,140
+die nähere Umgebung des Fehlers analysieren können.
+
+28
+00:01:58,140 --> 00:02:03,750
+Dadurch ist das Ausfindigmachen des Ursprungs
+sehr effizient, sodass das Netzmodell schnellstmöglich
+
+29
+00:02:03,750 --> 00:02:05,659
+wieder funktionieren kann.
+
+30
+00:02:05,659 --> 00:02:10,919
+Das ist auch schon wieder das Ende unseres kurzen Videos.
+
+31
+00:02:10,919 --> 00:02:13,181
+Wir hoffen es hat euch gefallen.
+
