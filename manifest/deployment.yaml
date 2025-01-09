@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: videos
-          image: "trueberryless/videos"
+          image: "trueberryless/videos:0.1.0"
           imagePullPolicy: Always
