@@ -18,6 +18,7 @@ export default defineConfig({
         },
       ],
       plugins: [starlightVideos()],
+      customCss: ["./src/styles/landing.css"],
     }),
   ],
 });
