@@ -26,13 +26,13 @@ Learn the components and workflow of a service-oriented architecture (SOA) to ha
 
 **Key Components:**
 
-1. **Apache Kafka** : A messaging system for real-time data ingestion.
+1. **Apache Kafka**: A messaging system for real-time data ingestion.
 
-2. **PostgreSQL** : A relational database to persist anomaly data.
+2. **PostgreSQL**: A relational database to persist anomaly data.
 
-3. **GraphQL API** : Serves as the interface between backend and frontend, enabling queries and filtering.
+3. **GraphQL API**: Serves as the interface between backend and frontend, enabling queries and filtering.
 
-4. **Angular** : Frontend framework used to create an interactive and user-friendly dashboard.
+4. **Angular**: Frontend framework used to create an interactive and user-friendly dashboard.
 
 **Workflow:**
 
@@ -55,46 +55,54 @@ Learn the components and workflow of a service-oriented architecture (SOA) to ha
 
 ### Lesson 2: Backend Details
 
-**Apache Kafka** :
+**Apache Kafka**:
 
 - Provides a publish-subscribe messaging model.
 
 - Guarantees high throughput and fault tolerance.
 
 - Messages persist for later consumption if needed.
-  **PostgreSQL** :
+
+**PostgreSQL**:
+
 - Relational storage optimized for anomaly data.
 
 - Queries can be filtered, sorted, and paginated.
-  **GraphQL API** :
+
+**GraphQL API**:
+
 - Flexible querying capabilities, reducing over-fetching.
 
 - Facilitates frontend data access with structured responses.
-  **Key Consideration** : The decoupling of the backend from data sources and consumers ensures scalability and reliability.
+
+**Key Consideration**: 
+
+The decoupling of the backend from data sources and consumers ensures scalability and reliability.
 
 ### Interactive Question 2: Backend Technologies
 
 <Quiz title="Which technologies form the backend of the application?" multiple>
   <QuizOption correct>Kafka</QuizOption>
+  <QuizOption>MySQL</QuizOption>
   <QuizOption correct>PostgreSQL</QuizOption>
   <QuizOption correct>GraphQL API</QuizOption>
-  <QuizOption>MySQL</QuizOption>
 </Quiz>
 
 ### Lesson 3: Frontend Visualization
 
-**Angular Framework** :
+**Angular Framework**:
 
 - Enables dynamic and responsive UI.
 
 - Used to design key components:
 
-  - **Anomalies Table** : Searchable, paginated, and filterable table for anomaly data.
+  - **Anomalies Table**: Searchable, paginated, and filterable table for anomaly data.
 
-  - **Graph View** : Visual representation of the power grid, pinpointing sources of issues.
+  - **Graph View**: Visual representation of the power grid, pinpointing sources of issues.
 
-  - **Dashboard Overview** : Displays aggregated metrics for quick insights.
-    **Best Practices for Visualization** :
+  - **Dashboard Overview**: Displays aggregated metrics for quick insights.
+
+**Best Practices for Visualization**:
 
 - Intuitive design with interactive elements.
 
@@ -111,17 +119,21 @@ Learn the components and workflow of a service-oriented architecture (SOA) to ha
 
 ### Lesson 4: Deployment and Integration
 
-**Deployment** :
+**Deployment**:
 
 - Docker containers ensure consistency across environments.
 
 - The SOA allows for modular development and maintenance.
-  **Integration with Siemens Infrastructure** :
+
+**Integration with Siemens Infrastructure**:
+
 - Kafka seamlessly integrates for data transmission.
 
 - PostgreSQL supports Siemens' existing data workflows.
-  **Outcome** :
-  The solution enhances anomaly analysis by transforming unstructured logs into actionable insights, significantly reducing resolution time for Siemens engineers.
+
+**Outcome**:
+
+The solution enhances anomaly analysis by transforming unstructured logs into actionable insights, significantly reducing resolution time for Siemens engineers.
 
 ### Interactive Question 4: Integration
 
