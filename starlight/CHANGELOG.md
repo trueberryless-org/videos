@@ -1,4 +1,4 @@
-# starlight
+# videos
 
 ## 0.1.0
 
