@@ -1,5 +1,11 @@
 # videos
 
+## 0.1.1
+
+### Patch Changes
+
+- [`63a4649`](https://github.com/trueberryless-org/videos/commit/63a4649c94b00270be267bc1d37c77ab2d3fe9ee) Thanks [@trueberryless](https://github.com/trueberryless)! - Fix types in thesis.mdx
+
 ## 0.1.0
 
 ### Minor Changes
