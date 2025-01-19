@@ -1,13 +1,13 @@
 {
   "name": "videos",
-  "type": "module",
   "version": "0.1.1",
+  "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "astro": "astro",
     "build": "astro build",
+    "dev": "astro dev",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "astro dev"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.30.5",
