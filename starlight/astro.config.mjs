@@ -9,7 +9,7 @@ export default defineConfig({
     starlight({
       title: "Videos",
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/trueberryless-org/videos",
       },
       sidebar: [
         {
