@@ -8,9 +8,18 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Videos",
-      social: {
-        github: "https://github.com/trueberryless-org/videos",
-      },
+      social: [
+        {
+          icon: "blueSky",
+          label: "BlueSky",
+          href: "https://bsky.app/profile/trueberryless.org",
+        },
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/trueberryless-org/videos",
+        },
+      ],
       sidebar: [
         {
           label: "Videos",
