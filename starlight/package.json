@@ -1,7 +1,7 @@
 {
   "name": "videos",
   "version": "0.1.1",
-  "homepage": "https://videos.trueberryless.org",
+  "homepage": "https://videos.felixs.dev",
   "bugs": {
     "url": "https://github.com/trueberryless-org/videos/issues"
   },
@@ -10,7 +10,7 @@
     "url": "https://github.com/trueberryless-org/videos.git"
   },
   "license": "MIT",
-  "author": "trueberryless <trueberryless@gmail.com> (https://trueberryless.org)",
+  "author": "trueberryless <trueberryless@gmail.com> (https://felixs.dev)",
   "type": "module",
   "scripts": {
     "astro": "astro",
