@@ -1,5 +1,6 @@
 {
   "name": "videos",
+  "private": true,
   "homepage": "https://videos.felixs.dev/",
   "bugs": {
     "url": "https://github.com/trueberryless-org/videos/issues"
@@ -14,17 +15,17 @@
   "scripts": {
     "astro": "astro",
     "build": "astro build",
+    "check": "astro check",
     "dev": "astro dev",
-    "preview": "astro preview",
-    "start": "astro dev",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "knip": "knip",
     "lint": "oxlint",
+    "preview": "astro preview",
+    "start": "astro dev",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "pnpm build && playwright test",
-    "check": "astro check"
+    "test:e2e": "pnpm build && playwright test"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.5",
@@ -32,8 +33,6 @@
     "sharp": "^0.35.5",
     "starlight-videos": "^0.5.0"
   },
-  "packageManager": "pnpm@11.28.0",
-  "private": true,
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@axe-core/playwright": "^4.13.0",
@@ -49,6 +48,7 @@
     "vitest": "^5.0.3",
     "yaml": "^2.9.1"
   },
+  "packageManager": "pnpm@11.28.0",
   "engines": {
     "node": ">=24"
   }
